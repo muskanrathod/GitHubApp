@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:cardCornerRadius="8dp"
+            android:elevation="10dp">
+
+            <ImageView
+                android:id="@+id/iv_main"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:src="@drawable/cover_1"
+                android:background="@color/white"
+                android:scaleType="centerCrop" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book Title 1"
+            android:fontFamily="@font/nunito_sans_bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description 1"
+            android:fontFamily="@font/nunito_sans_regular"
+            android:textColor="@color/black"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:textSize="@dimen/_8ssp" />
+
+    </LinearLayout>
+</layout>
