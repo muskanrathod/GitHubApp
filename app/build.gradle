@@ -10,7 +10,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.tookbook"
+        applicationId "com.githubapp"
         minSdk 21
         targetSdk 33
         versionCode 1

@@ -3,27 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/auth_navigation"
-    app:startDestination="@id/welcomeFragment">
+    app:startDestination="@id/splashFragment">
 
     <fragment
-        android:id="@+id/welcomeFragment"
-        android:name="com.tookbook.ui.authModel.welcome.WelcomeFragment"
-        android:label="WelcomeFragment" >
-        <action
-            android:id="@+id/action_welcomeFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-        <action
-            android:id="@+id/action_welcomeFragment_to_signupFragment"
-            app:destination="@id/signupFragment" />
+        android:id="@+id/splashFragment"
+        android:name="com.githubapp.ui.authModel.splash.SplashFragment"
+        android:label="SplashFragment" >
     </fragment>
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.tookbook.ui.authModel.login.LoginFragment"
-        android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
-    <fragment
-        android:id="@+id/signupFragment"
-        android:name="com.tookbook.ui.authModel.signup.SignupFragment"
-        android:label="fragment_signup"
-        tools:layout="@layout/fragment_signup" />
+
 </navigation>

@@ -15,24 +15,5 @@
             android:layout_height="match_parent"
             app:defaultNavHost="true" />
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomNav"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
-            android:padding="@dimen/_5sdp"
-            app:elevation="10dp"
-            app:itemRippleColor="@android:color/transparent"
-            android:layout_marginHorizontal="@dimen/_20sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            app:itemIconTint="@color/nav_tint_selector"
-            android:background="@drawable/nav_bg_curved"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_menu"/>
-
-<!--        android:outlineAmbientShadowColor="@android:color/transparent"-->
-<!--        android:outlineSpotShadowColor="@android:color/transparent"-->
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

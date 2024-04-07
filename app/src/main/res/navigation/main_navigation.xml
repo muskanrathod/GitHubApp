@@ -7,49 +7,16 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.tookbook.ui.mainModel.home.HomeFragment"
+        android:name="com.githubapp.ui.mainModel.home.HomeFragment"
         android:label="HomeFragment"
         tools:layout="@layout/fragment_home">
         <action
-            android:id="@+id/action_homeFragment_to_bookDetailFragment"
-            app:destination="@id/bookDetailFragment" />
+            android:id="@+id/action_homeFragment_to_repoDetailFragment"
+            app:destination="@id/repoDetailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/shelfFragment"
-        android:name="com.tookbook.ui.mainModel.shelf.ShelfFragment"
-        android:label="ShelfFragment"
-        tools:layout="@layout/fragment_shelf"/>
-    <fragment
-        android:id="@+id/accountFragment"
-        android:name="com.tookbook.ui.mainModel.account.AccountFragment"
-        android:label="AccountFragment"
-        tools:layout="@layout/fragment_account">
-        <action
-            android:id="@+id/action_accountFragment_to_ordersFragment"
-            app:destination="@id/ordersFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/notificationFragment"
-        android:name="com.tookbook.ui.mainModel.notification.NotificationFragment"
-        android:label="NotificationFragment"
-        tools:layout="@layout/fragment_notification"/>
-    <fragment
-        android:id="@+id/ordersFragment"
-        android:name="com.tookbook.ui.mainModel.orders.OrdersFragment"
-        android:label="OrdersFragment"
-        tools:layout="@layout/fragment_orders"/>
-    <fragment
-        android:id="@+id/bookDetailFragment"
-        android:name="com.tookbook.ui.mainModel.bookDetail.BookDetailFragment"
-        android:label="BookDetailFragment"
-        tools:layout="@layout/fragment_book_detail">
-        <action
-            android:id="@+id/action_bookDetailFragment_to_orderPlacedFragment"
-            app:destination="@id/orderPlacedFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/orderPlacedFragment"
-        android:name="com.tookbook.ui.mainModel.orderPlaced.OrderPlacedFragment"
-        android:label="fragment_order_placed"
-        tools:layout="@layout/fragment_order_placed" />
+        android:id="@+id/repoDetailFragment"
+        android:name="com.githubapp.ui.mainModel.repoDetail.RepoDetailFragment"
+        android:label="RepoDetailFragment" />
+
 </navigation>
