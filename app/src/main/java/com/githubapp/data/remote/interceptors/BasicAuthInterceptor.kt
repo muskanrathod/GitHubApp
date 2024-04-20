@@ -9,7 +9,7 @@ class BasicAuthInterceptor() : Interceptor {
     override fun intercept(chain: Interceptor.Chain): okhttp3.Response {
         var request = chain.request()
 
-        request = request.newBuilder().header("Authorization", "Bearer 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").build()
+        request = request.newBuilder().header("Authorization", "Bearer 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").build()
 
         return chain.proceed(request)
     }
