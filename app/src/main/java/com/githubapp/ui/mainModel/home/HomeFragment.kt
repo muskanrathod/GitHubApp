@@ -10,7 +10,7 @@ import android.text.TextWatcher
 import android.view.View
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.githubapp.R
 import com.githubapp.base.fragment.BaseFragment
 import com.githubapp.data.model.Items
@@ -53,9 +53,9 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>(), RepoLis
             val repositoryDTO: ArrayList<Items> = gson.fromJson(jsonArrayString, personListType)
             repoListAdapter = RepoListAdapter(repositoryDTO, requireContext(), this)
             val layoutManager =
-                LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
-            binder!!.rvList.layoutManager = layoutManager
-            binder!!.rvList.adapter = repoListAdapter
+                GridLayoutManager(requireContext(),3, GridLayoutManager.VERTICAL, false)
+            binder.rvList.layoutManager = layoutManager
+            binder.rvList.adapter = repoListAdapter
         }
 
         binder.etSearch.addTextChangedListener(object : TextWatcher {
@@ -89,7 +89,7 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>(), RepoLis
                 getViewModel().appDataManager.saveRepoDTO("dto", json)
                 repoListAdapter = RepoListAdapter(mList, requireContext(), this)
                 val layoutManager =
-                    LinearLayoutManager(requireContext(), LinearLayoutManager.VERTICAL, false)
+                    GridLayoutManager(requireContext(),3, GridLayoutManager.VERTICAL, false)
                 binder!!.rvList.layoutManager = layoutManager
                 binder!!.rvList.adapter = repoListAdapter
                 getViewModel().successData.value = null
